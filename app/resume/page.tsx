@@ -12,7 +12,7 @@ const resumeData = {
     location: "Beaver, PA",
   },
   summary:
-    "Healthcare IT support professional with experience in access, endpoint, and clinical application support in a HIPAA-regulated environment. Supports 2 hospitals, 30 remote sites, and 4,000+ workstations, handling 10–25 tickets per day plus regular on-call coverage. Hands-on with Active Directory, Imprivata SSO/MFA, hardware repair, Windows and VDI recovery, Sunrise and TouchWorks application support, and clear escalation to the right owning team.",
+    "Cybersecurity-focused IT operations professional bridging frontline healthcare support and security engineering. Brings a cybersecurity degree, hands-on security projects, and experience with identity and access support, endpoint recovery, and incident triage in a HIPAA-regulated environment.",
   experience: [
     {
       title: "Help Desk Specialist",
@@ -20,7 +20,7 @@ const resumeData = {
       period: "October 2024 - Present",
       location: "Beaver, PA",
       description: [
-        "Keep patient-facing clinical systems running across 2 hospitals, 30 remote sites, and 4,000+ workstations through first-line support and regular on-call/after-hours coverage.",
+        "Support security-sensitive clinical users and systems across 2 hospitals, 30 remote sites, and 4,000+ workstations, resolving 5–15 tickets daily and providing regular on-call coverage.",
         "Administer Active Directory groups, policies, and access assignments; deploy and troubleshoot Imprivata SSO/MFA across clinical endpoints and remote sites.",
         "Diagnose hardware failures; repair and recover Windows workstations and clinical kiosks; restore VDI access and system issues; and install or update drivers.",
         "Troubleshoot VPN/DNS, Citrix Workspace, Microsoft Office 2016, and printer/label issues to keep distributed clinics and physician offices online.",
