@@ -6,20 +6,20 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Bert Darnell | Cybersecurity Professional",
-  description: "Personal website, technical webposts, and resume for Bert Darnell - Cybersecurity Professional and Help Desk Specialist",
+  title: "Bert Darnell | Healthcare IT Support",
+  description: "Personal website, technical webposts, and resume for Bert Darnell — healthcare IT support, clinical applications, and access administration.",
   metadataBase: new URL("https://helloto.dev"),
   openGraph: {
-    title: "Bert Darnell | Cybersecurity Professional",
-    description: "Personal website, technical webposts, and resume for Bert Darnell - Cybersecurity Professional and Help Desk Specialist",
+    title: "Bert Darnell | Healthcare IT Support",
+    description: "Personal website, technical webposts, and resume for Bert Darnell — healthcare IT support, clinical applications, and access administration.",
     type: "website",
     url: "/",
     siteName: "helloto.dev",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bert Darnell | Cybersecurity Professional",
-    description: "Personal website, technical webposts, and resume for Bert Darnell - Cybersecurity Professional and Help Desk Specialist",
+    title: "Bert Darnell | Healthcare IT Support",
+    description: "Personal website, technical webposts, and resume for Bert Darnell — healthcare IT support, clinical applications, and access administration.",
   },
   robots: {
     index: true,

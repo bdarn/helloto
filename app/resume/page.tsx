@@ -5,28 +5,27 @@ import { Navbar } from "@/components/Navbar";
 
 const resumeData = {
   name: "Bert Darnell",
-  title: "Cybersecurity Professional | Help Desk Specialist",
+  title: "Healthcare IT Support | Clinical Applications & Access",
   contact: {
-    email: "bert@helloto.me",
+    email: "bertdarnell@gmail.com",
     github: "github.com/berts-repo",
     location: "Beaver, PA",
   },
   summary:
-    "Cybersecurity-focused IT professional with hands-on experience in incident detection/escalation, identity and access administration, endpoint recovery, and enterprise authentication support in a HIPAA-regulated healthcare environment. B.S. in Information and Computer Science with Cisco CCNA and Cisco CyberOps Associate certifications. Strong foundation in Active Directory, Imprivata SSO/MFA, networking troubleshooting, and security monitoring through both production support and homelab work (Wazuh/Kibana, Proxmox, Linux, WireGuard). Targeting SOC Analyst, Security Analyst, IAM Analyst, or Junior Cybersecurity roles.",
+    "Healthcare IT support professional with experience in access, endpoint, and clinical application support in a HIPAA-regulated environment. Supports 2 hospitals, 30 remote sites, and 4,000+ workstations, handling 10–25 tickets per day plus regular on-call coverage. Hands-on with Active Directory, Imprivata SSO/MFA, hardware repair, Windows and VDI recovery, Sunrise and TouchWorks application support, and clear escalation to the right owning team.",
   experience: [
     {
-      title: "Help Desk Specialist — Security / Infrastructure / IAM Support",
+      title: "Help Desk Specialist",
       company: "Questeq (contracted to Heritage Valley Health System)",
       period: "October 2024 - Present",
       location: "Beaver, PA",
       description: [
-        "Support identity and access requests across enterprise healthcare applications, including user account updates, access changes, and deprovisioning activities.",
-        "Administer Active Directory user accounts, workstation policies, and security groups; audit group memberships and enforce least-privilege access in a HIPAA-regulated environment.",
-        "Investigated anomalous remote authentication activity by validating user-reported location against active login behavior, initiated immediate credential security steps, escalated to security personnel, and documented the incident through resolution.",
-        "Author and distribute formal incident reports to leadership and relevant stakeholders, documenting timelines, actions taken, escalation paths, and follow-up outcomes.",
-        "Deploy and troubleshoot Imprivata SSO/MFA across clinical endpoints, workstations, and remote physician offices.",
-        "Reimage and restore endpoints after security checks and suspected compromise events to return systems to a known-good state.",
-        "Troubleshoot VPN, DNS, and DHCP issues via CLI and support Cisco gateway configurations across 2 hospital campuses and 50+ remote physician offices.",
+        "Keep patient-facing clinical systems running across 2 hospitals, 30 remote sites, and 4,000+ workstations through first-line support and regular on-call/after-hours coverage.",
+        "Administer Active Directory groups, policies, and access assignments; deploy and troubleshoot Imprivata SSO/MFA across clinical endpoints and remote sites.",
+        "Diagnose hardware failures; repair and recover Windows workstations and clinical kiosks; restore VDI access and system issues; and install or update drivers.",
+        "Troubleshoot VPN/DNS, Citrix Workspace, Microsoft Office 2016, and printer/label issues to keep distributed clinics and physician offices online.",
+        "Triage Sunrise and TouchWorks EHR/application issues involving access, missing patient lists, and formatting; reproduce symptoms, assess access/VDI context, and route issues to the correct owning team.",
+        "Open and manage vendor support cases, document work and outcomes in Service Pro, and coordinate escalation with security, network, server, interface, clinical analyst, and application teams.",
       ],
     },
     {
@@ -34,44 +33,51 @@ const resumeData = {
       company: "Various",
       period: "2013 - 2023",
       description: [
-        "Direct Support Specialist, Nodaway County Services (2023) — maintained detailed records for 20+ clients with strong attention to confidentiality and documentation quality.",
+        "Direct Support Specialist, Nodaway County Services (2023) — supported 3 individuals with disabilities and maintained accurate, confidential documentation.",
         "Night Auditor, Holiday Inn & Cobblestone Inn & Suites (2021–2022) — nightly financial reconciliations, basic network/printer troubleshooting, overnight operational support.",
-        "Crew Lead, Hill Brother Construction (2018–2020) — coordinated up to 3 crews across multiple job sites.",
+        "Earlier leadership experience — trained and mentored new associates, supervised daily operations, and coordinated crews across multiple job sites.",
       ],
     },
   ],
   homelabProjects: [
+    {
+      title: "Rabbithole",
+      period: "Current",
+      technologies: "FastAPI, SQLite, Svelte, TypeScript, Tor, Ollama",
+      description: [
+        "Built a local-first OSINT workbench for journalism and research with Tor-routed crawling, graph-based investigation, local search, embeddings, and Ollama-backed analysis.",
+        "Implemented privacy and security guardrails including loopback-only operation, Tor-only egress, URL and redirect safety, local authentication, Origin/Host checks, CSP, and build-blocking lint rules.",
+      ],
+    },
+    {
+      title: "Reliquary",
+      period: "2026",
+      technologies: "Shell, tar, SHA-256",
+      description: [
+        "Created a personal archiving utility that bundles files and directories into dated archives with logged SHA-256 integrity information.",
+        "Added verify, list, cleanup, restore, and safe-restore modes with path-traversal checks and explicit warnings for destructive original-path restores.",
+      ],
+    },
     {
       title: "Security & Infrastructure Homelab",
       period: "2024 - Present",
       technologies: "Proxmox VE, Wazuh, Kibana, WireGuard, Pi-hole, Unbound, TrueNAS, ZFS, Linux",
       description: [
         "Built and administered a Proxmox VE homelab with 5+ VMs supporting security monitoring, Linux services, storage, and remote access testing.",
-        "Deployed Wazuh (SIEM/IDS) with Kibana dashboards and practiced log ingestion, alert analysis, and SOC-style triage workflows.",
-        "Simulated attack scenarios (brute-force, lateral movement) to validate detections and tune alerts.",
-        "Implemented WireGuard VPN for secure remote access and configured firewall rules and network segmentation for service isolation.",
-        "Deployed Pi-hole with Unbound (DNSSEC-capable recursive DNS) and administered TrueNAS SCALE with ZFS, NFS/SMB shares, and automated backup/DR procedures.",
-      ],
-    },
-    {
-      title: "Networking & Scripting Practice",
-      period: "2024",
-      technologies: "Python, Bash, TCP/UDP sockets",
-      description: [
-        "Developed TCP/UDP client-server socket scripts in Python to reinforce networking fundamentals and packet-flow behavior.",
-        "Built a shell utility to collect recent CLI history across Bash/Zsh environments for troubleshooting and workflow auditing.",
+        "Practiced Wazuh monitoring, alert review, and NIST-aligned hardening; also brought up a small ELK Stack deployment with Elasticsearch, Logstash, and Kibana.",
+        "Configured WireGuard, firewall rules, network segmentation, Pi-hole with Unbound, and TrueNAS SCALE storage with ZFS, NFS/SMB, and backup/DR procedures.",
       ],
     },
   ],
   education: [
     {
-      degree: "B.S. in Information and Computer Science",
+      degree: "B.S. in Information and Computer Science, Cybersecurity Concentration",
       school: "Park University",
       period: "May 2024",
       location: "Parkville, MO",
       achievements: [
         "GPA: 3.34",
-        "Earned CCNA/CyberOps-related coursework and labs (15 credit hours)",
+        "Cisco CCNAv7 and CyberOps Associate coursework/training",
         "Hands-on exposure to NIST SP 800-53 concepts and cybersecurity threat/vulnerability assessment activities",
       ],
     },
@@ -84,39 +90,37 @@ const resumeData = {
     },
   ],
   hardSkills: [
-    "Active Directory & Group Policy",
-    "Identity & Access Management (IAM)",
+    "Active Directory Groups & Policies",
+    "Access Administration",
     "Imprivata SSO/MFA",
-    "Incident Detection & Triage",
-    "Incident Escalation & Reporting",
-    "Endpoint Reimaging & Recovery",
-    "Wazuh SIEM/IDS",
-    "Kibana Dashboards",
-    "Log Analysis",
-    "Linux System Administration",
+    "Sunrise & TouchWorks EHR Support",
+    "Endpoint Imaging & Recovery",
+    "Hardware Repair & Component Replacement",
+    "VDI Recovery",
+    "Citrix Workspace",
+    "VPN & DNS Troubleshooting",
+    "Microsoft Office 2016",
+    "Service Pro Ticketing",
+    "Vendor Case Coordination",
+    "Windows & Linux",
     "Proxmox VE",
-    "WireGuard VPN",
-    "Firewall Configuration (iptables, UFW)",
-    "TCP/IP, DNS, DHCP, VLANs",
-    "Wireshark / tcpdump",
-    "PowerShell & Bash Scripting",
-    "Python",
-    "NIST SP 800-53",
-    "HIPAA-aligned Support Practices",
-    "TrueNAS / ZFS",
-    "Pi-hole / Unbound / DNSSEC",
+    "Wazuh Monitoring",
+    "Kibana",
+    "WireGuard",
+    "Python & Bash",
+    "SQLite",
+    "Git/GitHub",
   ],
   softSkills: [
     "Technical Documentation",
-    "Incident Reporting",
-    "Cross-functional Escalation",
-    "Critical Thinking",
-    "Attention to Detail",
-    "Problem Solving",
-    "Team Collaboration",
+    "Clinical Application Triage",
+    "Cross-Functional Escalation",
+    "End-User Communication",
+    "Confidentiality & Data Integrity",
     "Multi-site Coordination",
-    "SLA Awareness",
-    "Adaptability",
+    "On-Call Support",
+    "Problem Solving",
+    "Training & Mentorship",
   ],
 };
 
@@ -166,9 +170,12 @@ export default function ResumePage() {
                 {resumeData.name}
               </h1>
               <p className="text-xl text-gray-600 dark:text-gray-400 mb-4 flex flex-col sm:flex-row sm:items-center sm:justify-center gap-1 sm:gap-0">
-                <span>Cybersecurity Professional</span>
-                <span className="hidden sm:inline mx-2">|</span>
-                <span>Help Desk Specialist</span>
+                {resumeData.title.split(" | ").map((part, index) => (
+                  <span key={part} className="contents">
+                    {index > 0 && <span className="hidden sm:inline mx-2">|</span>}
+                    <span>{part}</span>
+                  </span>
+                ))}
               </p>
             </motion.header>
             <div className="resume-layout grid grid-cols-1 md:grid-cols-[1fr_auto] md:gap-8">
